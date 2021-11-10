@@ -11,7 +11,7 @@ class Direccion {
     }
 
     public String toString() {
-        return "calle: " + calle + ", barrio = " + barrio + ", numero = " + numero;
+        return barrio + ", " + calle + " " + numero;
     }
 
     public Barrio getBarrio() {

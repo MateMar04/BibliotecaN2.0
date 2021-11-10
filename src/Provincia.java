@@ -7,7 +7,7 @@ class Provincia {
     }
 
     public String toString() {
-        return "Provincia" + nombre;
+        return nombre;
     }
 
 }

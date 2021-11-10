@@ -15,6 +15,18 @@ class Cliente {
         return direccion;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
     public String toString() {
         return "Cliente: " + "nombre = " + nombre + ", telefono = " + telefono + ", mail = " + mail + ", direccion = " + direccion;
     }

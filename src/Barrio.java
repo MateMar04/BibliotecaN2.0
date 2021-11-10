@@ -7,8 +7,8 @@ class Barrio {
         this.localidad = localidad;
     }
 
+    @Override
     public String toString() {
-        return nombre + ", localidad = " + localidad;
+        return localidad + ", " + nombre;
     }
-
 }

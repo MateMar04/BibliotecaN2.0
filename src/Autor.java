@@ -6,4 +6,10 @@ class Autor {
         this.nombre = nombre;
     }
 
+    @Override
+    public String toString() {
+        return "Autor{" +
+                "nombre='" + nombre + '\'' +
+                '}';
+    }
 }

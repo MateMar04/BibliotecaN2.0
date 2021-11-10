@@ -8,7 +8,7 @@ class Localidad {
     }
 
     public String toString() {
-        return nombre + ", prov = " + provincia;
+        return provincia + ", " + nombre;
     }
 
 }

@@ -15,7 +15,7 @@ public class Prestamo {
     }
 
     void agregar(Publicacion p) {
-        p.incrementarCantiPrestamos();
+        p.incrementarCantPrestamos();
         lista.add(p);
     }
 

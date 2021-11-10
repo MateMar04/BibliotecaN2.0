@@ -1,6 +1,6 @@
 public class Libro extends Publicacion {
 
-    public Libro(String nombre, Editorial Editorial, Autor Autor) {
-        super(nombre, Editorial, Autor);
+    public Libro(String nombre, Editorial editorial, Autor autor) {
+        super(nombre, editorial, autor);
     }
 }

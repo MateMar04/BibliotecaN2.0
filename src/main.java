@@ -1,6 +1,4 @@
-public class Main {
-
-
+public class main {
     public static void main(String[] args) {
 
         Provincia provincia = new Provincia("Cordoba");
@@ -32,16 +30,16 @@ public class Main {
         biblioteca.agregar(revista);
         biblioteca.prestar(prestamo);
 
-        System.out.println("Cantidad de prestamos: " + biblioteca.cantidadprestamos());
-        biblioteca.cantlibrosbiblioteca();
-        biblioteca.cantidadtotalpublicaciones();
-        biblioteca.listapublicaciones();
-        biblioteca.listaprestamos();
+        System.out.println("Cantidad de prestamos: " + biblioteca.cantPrestamos());
+        biblioteca.cantLibrosBiblioteca();
+        biblioteca.cantPublicaciones();
+        biblioteca.listaPublicaciones();
+        biblioteca.listaPrestamos();
 
         System.out.println("listado de clientes a los que se les presto uno o mas libros:");
-        biblioteca.listaclientes();
+        biblioteca.listaClientes();
 
         System.out.println("listado de los barrios donde hay prestamos:");
-        biblioteca.listabarrios();
+        biblioteca.listaBarrios();
     }
 }

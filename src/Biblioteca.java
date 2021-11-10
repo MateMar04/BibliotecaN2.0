@@ -22,12 +22,12 @@ class Biblioteca {
     }
 
 
-    int cantidadprestamos() {
+    int cantPrestamos() {
         return listadeprestamos.size();
 
     }
 
-    void cantidadtotalpublicaciones() {
+    void cantPublicaciones() {
         int cantpublicaciones = 0;
         for (Publicacion p : listadepublicaciones) {
             cantpublicaciones++;
@@ -36,7 +36,7 @@ class Biblioteca {
         System.out.println("Cantidad de publicaciones: " + cantpublicaciones);
     }
 
-    void cantlibrosbiblioteca() {
+    void cantLibrosBiblioteca() {
         int cantidadlibros = 0;
         int cantidadrevistas = 0;
         for (Publicacion p : listadepublicaciones) {
@@ -51,7 +51,7 @@ class Biblioteca {
         System.out.println("cantidad de revistas que posee la biblioteca: " + cantidadrevistas);
     }
 
-    void listapublicaciones() {
+    void listaPublicaciones() {
         System.out.println("Listado de publicaciones:");
         for (Publicacion p : listadepublicaciones) {
             System.out.println(p.getTitulo());
@@ -59,14 +59,14 @@ class Biblioteca {
         }
     }
 
-    void listaprestamos() {
+    void listaPrestamos() {
         System.out.println("Lista de prestamos:");
         for (Prestamo p : listadeprestamos) {
             System.out.println(p);
         }
     }
 
-    void listaclientes() {
+    void listaClientes() {
         for (Prestamo p : listadeprestamos) {
             for (Publicacion publicacion : p.getPublicaciones()) {
                 if (publicacion instanceof Libro) {
@@ -77,7 +77,7 @@ class Biblioteca {
 
     }
 
-    void listabarrios() {
+    void listaBarrios() {
         for (Prestamo p : listadeprestamos) {
             for (Publicacion publicacion : p.getPublicaciones()) {
                 System.out.println(p.getClientes().getDireccion().getBarrio());
