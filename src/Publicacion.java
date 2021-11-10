@@ -2,23 +2,22 @@ public abstract class Publicacion {
     private int cantidadeprestamos;
     private final String titulo;
 
-    public Publicacion (String nombre){
+    public Publicacion(String nombre, Editorial Editorial, Autor Autor) {
         this.titulo = nombre;
     }
 
-    public void incrementarCantiPrestamos(){
+    public void incrementarCantiPrestamos() {
         cantidadeprestamos++;
-        
+
     }
 
     public String getTitulo() {
         return titulo;
     }
-    
-    
+
 
     public String toString() {
-        return "Publicacion" + titulo +"cantidadeprestamos = " + cantidadeprestamos;
+        return "Publicacion" + titulo + "cantidadeprestamos = " + cantidadeprestamos;
     }
 
 }

@@ -6,9 +6,9 @@ class Localidad {
         this.nombre = nombre;
         this.provincia = prov;
     }
-    
+
     public String toString() {
         return nombre + ", prov = " + provincia;
     }
-    
+
 }

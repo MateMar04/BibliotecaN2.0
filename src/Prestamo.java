@@ -5,7 +5,7 @@ public class Prestamo {
     private final String fechainicioprest;
     private final String fetentativadedev;
     private final Cliente cliente;
-    private ArrayList<Publicacion> lista;
+    private final ArrayList<Publicacion> lista;
 
     public Prestamo(String fechainicioprest, String fetentativadedev, Cliente cliente) {
         this.fechainicioprest = fechainicioprest;
@@ -16,24 +16,22 @@ public class Prestamo {
 
     void agregar(Publicacion p) {
         p.incrementarCantiPrestamos();
-           lista.add(p);
+        lista.add(p);
     }
-    
-   
+
+
     Cliente getClientes() {
-       return cliente;
+        return cliente;
     }
 
     public ArrayList<Publicacion> getPublicaciones() {
         return lista;
     }
-   
-   
+
 
     public String toString() {
-        return "fecha inicio prestamo = " + fechainicioprest + ", fecha caducidad prestamo = " + fetentativadedev + cliente + ", lista=" + lista ;
+        return "fecha inicio prestamo = " + fechainicioprest + ", fecha caducidad prestamo = " + fetentativadedev + cliente + ", lista=" + lista;
     }
-   
-   
+
 
 }

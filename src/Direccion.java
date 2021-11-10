@@ -9,14 +9,14 @@ class Direccion {
         this.numero = numero;
         this.barrio = barrio;
     }
-    
+
     public String toString() {
-        return "calle: "+ calle + ", barrio = " + barrio + ", numero = " + numero;
+        return "calle: " + calle + ", barrio = " + barrio + ", numero = " + numero;
     }
 
     public Barrio getBarrio() {
         return barrio;
     }
-    
-    
+
+
 }

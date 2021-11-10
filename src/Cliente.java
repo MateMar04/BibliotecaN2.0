@@ -14,9 +14,9 @@ class Cliente {
     public Direccion getDireccion() {
         return direccion;
     }
-    
+
     public String toString() {
-        return "Cliente: " +"nombre = "+ nombre + ", telefono = " + telefono + ", mail = " + mail + ", direccion = " + direccion ;
+        return "Cliente: " + "nombre = " + nombre + ", telefono = " + telefono + ", mail = " + mail + ", direccion = " + direccion;
     }
-    
+
 }

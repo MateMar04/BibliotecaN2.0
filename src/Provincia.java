@@ -5,9 +5,9 @@ class Provincia {
     public Provincia(String nombre) {
         this.nombre = nombre;
     }
-    
-     public String toString() {
-        return "Provincia"  + nombre ;
+
+    public String toString() {
+        return "Provincia" + nombre;
     }
-    
+
 }
