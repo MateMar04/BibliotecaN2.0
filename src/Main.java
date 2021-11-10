@@ -41,5 +41,8 @@ public class Main {
 
         System.out.println("listado de los barrios donde hay prestamos:");
         biblioteca.listaBarrios();
+
+        BibliotecaVentana bibliotecaVentana = new BibliotecaVentana();
+        bibliotecaVentana.setVisible(true);
     }
 }
