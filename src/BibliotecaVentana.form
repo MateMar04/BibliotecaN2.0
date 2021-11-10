@@ -32,12 +32,12 @@
               <text value="Cantidad De Libros:"/>
             </properties>
           </component>
-          <component id="fcb2" class="javax.swing.JLabel">
+          <component id="fcb2" class="javax.swing.JLabel" binding="cantLibrosLB">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="5e99c" class="javax.swing.JLabel">
@@ -48,12 +48,12 @@
               <text value="Cantidad De Revistas"/>
             </properties>
           </component>
-          <component id="528df" class="javax.swing.JLabel">
+          <component id="528df" class="javax.swing.JLabel" binding="cantRevistasLB">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="14e4d" class="javax.swing.JLabel">
@@ -64,12 +64,12 @@
               <text value="Publicaciones Totales"/>
             </properties>
           </component>
-          <component id="214e5" class="javax.swing.JLabel">
+          <component id="214e5" class="javax.swing.JLabel" binding="cantPublicacionesLB">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value=""/>
             </properties>
           </component>
         </children>
