@@ -20,7 +20,7 @@ public class Prestamo {
     }
 
 
-    Cliente getClientes() {
+    Cliente getCliente() {
         return cliente;
     }
 

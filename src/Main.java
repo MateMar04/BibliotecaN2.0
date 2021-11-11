@@ -19,16 +19,21 @@ public class Main {
         Editorial editorial = new Editorial("santillana");
         Editorial editorial1 = new Editorial("La Nacion");
 
-        Publicacion libro = new Libro("padre rico, hijo pobre", editorial, autor);
-        Publicacion revista = new Revista("la nacion", editorial1, autor1);
+        Publicacion libro = new Libro("Padre rico, hijo pobre", editorial, autor);
+        Publicacion revista = new Revista("La nacion", editorial1, autor1);
 
         Prestamo prestamo = new Prestamo("2/1/2021", "18/8/2021", cliente);
+        Prestamo prestamo1 = new Prestamo("1/1/2021", "18/8/2021", cliente);
+
         prestamo.agregar(libro);
+        prestamo.agregar(revista);
 
         Biblioteca biblioteca = new Biblioteca("biblioteca cordoba");
         biblioteca.agregar(libro);
         biblioteca.agregar(revista);
         biblioteca.prestar(prestamo);
+        biblioteca.prestar(prestamo1);
+        biblioteca.agregarCliente(cliente);
 
         System.out.println("Cantidad de prestamos: " + biblioteca.cantPrestamos());
         biblioteca.cantLibros();
