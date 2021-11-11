@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class ClienteVentana extends javax.swing.JFrame{
+public class ClienteVentana extends javax.swing.JFrame {
     private JComboBox clientesCB;
     private JLabel nombreLB;
     private JLabel telefonoLB;
@@ -9,7 +9,7 @@ public class ClienteVentana extends javax.swing.JFrame{
     private JLabel direccionLB;
     private JPanel panelGeneral;
 
-    public ClienteVentana(){
+    public ClienteVentana() {
         setTitle("Clientes");
         add(panelGeneral);
         setSize(400, 300);

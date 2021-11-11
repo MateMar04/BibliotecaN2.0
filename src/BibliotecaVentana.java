@@ -12,12 +12,16 @@ public class BibliotecaVentana extends javax.swing.JFrame {
     private JLabel cantRevistasLB;
     private JLabel cantPublicacionesLB;
 
-    public BibliotecaVentana() {
+    public BibliotecaVentana(Biblioteca biblioteca) {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Biblioteca");
         add(panelGeneral);
         setSize(400, 300);
         setMinimumSize(new Dimension(350, 200));
+
+        cantLibrosLB.setText(String.valueOf(biblioteca.cantLibros()));
+        cantRevistasLB.setText(String.valueOf(biblioteca.cantRevistas()));
+        cantPublicacionesLB.setText(String.valueOf(biblioteca.cantPublicaciones()));
 
 
         verLibrosButton.addMouseListener(new MouseAdapter() {

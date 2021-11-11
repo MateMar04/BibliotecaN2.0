@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class RevistaVentana extends javax.swing.JFrame{
+public class RevistaVentana extends javax.swing.JFrame {
     private JComboBox comboBox1;
     private JLabel editoralLB;
     private JLabel autorLB;

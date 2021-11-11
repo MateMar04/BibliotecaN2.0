@@ -27,28 +27,33 @@ class Biblioteca {
 
     }
 
-    void cantPublicaciones() {
+    public int cantPublicaciones() {
         int cantpublicaciones = 0;
         for (Publicacion p : listadepublicaciones) {
             cantpublicaciones++;
 
         }
-        System.out.println("Cantidad de publicaciones: " + cantpublicaciones);
+        return cantpublicaciones;
     }
 
-    void cantLibrosBiblioteca() {
-        int cantidadlibros = 0;
-        int cantidadrevistas = 0;
+    public int cantLibros() {
+        int cantidadLibros = 0;
         for (Publicacion p : listadepublicaciones) {
             if (p instanceof Libro) {
-                cantidadlibros++;
-            } else {
-                cantidadrevistas++;
+                cantidadLibros++;
             }
-
         }
-        System.out.println("cantidad de libros que posee la biblioteca: " + cantidadlibros);
-        System.out.println("cantidad de revistas que posee la biblioteca: " + cantidadrevistas);
+        return cantidadLibros;
+    }
+
+    public int cantRevistas() {
+        int cantidadRevistas = 0;
+        for (Publicacion p : listadepublicaciones) {
+            if (p instanceof Revista) {
+                cantidadRevistas++;
+            }
+        }
+        return cantidadRevistas;
     }
 
     void listaPublicaciones() {

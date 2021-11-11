@@ -31,7 +31,7 @@ public class Main {
         biblioteca.prestar(prestamo);
 
         System.out.println("Cantidad de prestamos: " + biblioteca.cantPrestamos());
-        biblioteca.cantLibrosBiblioteca();
+        biblioteca.cantLibros();
         biblioteca.cantPublicaciones();
         biblioteca.listaPublicaciones();
         biblioteca.listaPrestamos();
@@ -42,7 +42,7 @@ public class Main {
         System.out.println("listado de los barrios donde hay prestamos:");
         biblioteca.listaBarrios();
 
-        BibliotecaVentana bibliotecaVentana = new BibliotecaVentana();
+        BibliotecaVentana bibliotecaVentana = new BibliotecaVentana(biblioteca);
         bibliotecaVentana.setVisible(true);
     }
 }
