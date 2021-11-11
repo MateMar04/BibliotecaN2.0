@@ -37,7 +37,7 @@ public class BibliotecaVentana extends javax.swing.JFrame {
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
 
-                new RevistaVentana().setVisible(true);
+                new RevistaVentana(biblioteca).setVisible(true);
             }
         });
         verClientesButton.addMouseListener(new MouseAdapter() {

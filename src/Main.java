@@ -11,16 +11,22 @@ public class Main {
 
         Direccion direccion = new Direccion("San Martin", " 143849", barrio);
 
-        Cliente cliente = new Cliente("ignacio", "84829294127", "ignacio@gmail.com", direccion);
+        Cliente cliente = new Cliente("Ignacio", "84829294127", "ignacio@gmail.com", direccion);
 
         Autor autor = new Autor("Robert Kiyosaki");
         Autor autor1 = new Autor("La Nacion");
+        Autor autor2 = new Autor("Rumbos");
+        Autor autor3 = new Autor("César Mallorquí");
 
-        Editorial editorial = new Editorial("santillana");
+        Editorial editorial = new Editorial("Santillana");
         Editorial editorial1 = new Editorial("La Nacion");
+        Editorial editorial2 = new Editorial("Rumbos");
+
 
         Publicacion libro = new Libro("Padre rico, hijo pobre", editorial, autor);
+        Publicacion libro1 = new Libro("La estrategia del parasito", editorial, autor3);
         Publicacion revista = new Revista("La nacion", editorial1, autor1);
+        Publicacion revista1 = new Revista("Rumbos", editorial2, autor2);
 
         Prestamo prestamo = new Prestamo("2/1/2021", "18/8/2021", cliente);
         Prestamo prestamo1 = new Prestamo("1/1/2021", "18/8/2021", cliente);
@@ -31,6 +37,8 @@ public class Main {
         Biblioteca biblioteca = new Biblioteca("biblioteca cordoba");
         biblioteca.agregar(libro);
         biblioteca.agregar(revista);
+        biblioteca.agregar(revista1);
+        biblioteca.agregar(libro1);
         biblioteca.prestar(prestamo);
         biblioteca.prestar(prestamo1);
         biblioteca.agregarCliente(cliente);
