@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class RevistaVentana extends javax.swing.JFrame{
     private JComboBox comboBox1;
@@ -10,5 +11,7 @@ public class RevistaVentana extends javax.swing.JFrame{
     public RevistaVentana() {
         setTitle("Revistas");
         add(panelGeneral);
+        setSize(400, 300);
+        setMinimumSize(new Dimension(250, 200));
     }
 }

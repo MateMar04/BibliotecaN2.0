@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class ClienteVentana extends javax.swing.JFrame{
     private JComboBox clientesCB;
@@ -11,5 +12,7 @@ public class ClienteVentana extends javax.swing.JFrame{
     public ClienteVentana(){
         setTitle("Clientes");
         add(panelGeneral);
+        setSize(400, 300);
+        setMinimumSize(new Dimension(250, 200));
     }
 }

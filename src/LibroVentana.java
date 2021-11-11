@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class LibroVentana extends javax.swing.JFrame{
     private JComboBox librosCB;
@@ -10,5 +11,7 @@ public class LibroVentana extends javax.swing.JFrame{
     public LibroVentana() {
         setTitle("Libros");
         add(panelGeneral);
+        setSize(400, 300);
+        setMinimumSize(new Dimension(250, 200));
     }
 }

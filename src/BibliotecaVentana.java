@@ -1,4 +1,7 @@
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class BibliotecaVentana extends javax.swing.JFrame {
     private JButton verLibrosButton;
@@ -10,9 +13,36 @@ public class BibliotecaVentana extends javax.swing.JFrame {
     private JLabel cantPublicacionesLB;
 
     public BibliotecaVentana() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Biblioteca");
         add(panelGeneral);
-        setSize(400, 400);
-        setResizable(false);
+        setSize(400, 300);
+        setMinimumSize(new Dimension(350, 200));
+
+
+        verLibrosButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+
+                new LibroVentana().setVisible(true);
+            }
+        });
+        verRevistasButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+
+                new RevistaVentana().setVisible(true);
+            }
+        });
+        verClientesButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+
+                new ClienteVentana().setVisible(true);
+            }
+        });
     }
 }
