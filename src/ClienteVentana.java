@@ -3,7 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Vector;
 
 public class ClienteVentana extends javax.swing.JFrame {
@@ -44,7 +43,7 @@ public class ClienteVentana extends javax.swing.JFrame {
                 ArrayList prestamos = new ArrayList();
 
                 for (Prestamo prestamo : biblioteca.getPrestamos()) {
-                    List<Publicacion> publicaciones = prestamo.getPublicaciones();
+                    ArrayList<Publicacion> publicaciones = prestamo.getPublicaciones();
                     if (prestamo.getCliente() == cliente) {
                         for (Publicacion publicacion : publicaciones) {
                             prestamos.add(publicacion.getTitulo());

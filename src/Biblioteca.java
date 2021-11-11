@@ -95,11 +95,31 @@ class Biblioteca {
         }
     }
 
-    public ArrayList<Cliente> getClientes(){
+    public ArrayList<Cliente> getClientes() {
         return listaClientes;
     }
 
     public ArrayList<Prestamo> getPrestamos() {
         return listaPrestamos;
+    }
+
+    public ArrayList<Libro> getLibros() {
+        ArrayList<Libro> libros = new ArrayList<>();
+        for (Publicacion p : listaPublicaciones) {
+            if (p instanceof Libro) {
+                libros.add((Libro) p);
+            }
+        }
+        return libros;
+    }
+
+    public ArrayList<Revista> getRevistas() {
+        ArrayList<Revista> revistas = new ArrayList<>();
+        for (Publicacion p : listaPublicaciones) {
+            if (p instanceof Revista) {
+                revistas.add((Revista) p);
+            }
+        }
+        return revistas;
     }
 }
